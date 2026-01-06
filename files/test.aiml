@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>test</pattern>
+        <template>We're going to go through some quick questions to help you decide which career path will work best for you.
+        <br></br><br></br>
+        Is writing code what you're looking for in computer science, or are you looking for something a bit more?
+            <button>
+                <text>Writing code sounds super exciting!</text>
+                <postback>programmer</postback>
+            </button>
+            <button>
+                <text>Writing code is fine, but I'd like to explore other options a bit deeper.</text>
+                <postback>not programmer</postback>
+            </button>    
+        </template>
+    </category>
+
+<category><pattern>quiz</pattern><template><srai>TEST</srai></template></category>
+<category><pattern>exam</pattern><template><srai>TEST</srai></template></category>
+
+    
+    <category>
+        <pattern>programmer</pattern>
+        <template>That's amazing! Writing code opens many doors for you in the computer science field.
+        <br></br><br></br>
+        Which would you prefer to dive deeper into, writing web pages or applications?
+            <button>
+                <text>Web pages are super interesting to me, I'd love to learn more.</text>
+                <postback>web developer result</postback>
+            </button>
+            <button>
+                <text>Programming applications seems like such a deep field, I'd love to dig deeper.</text>
+                <postback>software developer result</postback>
+            </button>
+            <button>
+                <text>I changed my mind, neither of these are for me.</text>
+                <postback>not programmer</postback>
+            </button>  
+        </template>
+    </category>
+    
+    <category>
+        <pattern>not programmer</pattern>
+        <template>No stress! Luckily for you, there are many fields in computer science which don't require writing code as heavily.
+        <br></br><br></br>
+        Tell me a bit more, would you prefer working with statistics or computer systems and operations?
+            <button>
+                <text>Statistics really inspire me to learn more!</text>
+                <postback>data scientist result</postback>
+            </button>
+            <button>
+                <text>Computer systems and the way they work are really cool, that's something that interests me.</text>
+                <postback>systems</postback>
+            </button>
+            <button>
+                <text>I changed my mind, I think I'd rather be a programmer of some kind.</text>
+                <postback>programmer</postback>
+            </button>
+            <button>
+                <text>I'm not sure either of these are for me.</text>
+                <postback>none result</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>systems</pattern>
+        <template>Cool! Computer systems are around us everywhere, so there will always be something to learn.
+        <br></br><br></br>
+        What about computer systems seems like may be more for you, day-to-day problems or keeping the system secure?
+            <button>
+                <text>Keeping day-to-day things together will make sure I always have something new to work on.</text>
+                <postback>it support result</postback>
+            </button>
+            <button>
+                <text>Securing the system will give me the sense of accomplishment that I'm looking for in computer science.</text>
+                <postback>security analyst result</postback>
+            </button>
+            <button>
+                <text>Neither of these are really drawing me in.</text>
+                <postback>none result</postback>
+            </button>
+            <button>
+                <text>I feel like I want to start this test over again.</text>
+                <postback>test restart</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>test restart</pattern>
+        <template>No worries at all! Take this test as many times as you need.
+        <br></br><br></br>
+        Is writing code what you're looking for in computer science, or are you looking for something a bit more?
+            <button>
+                <text>Writing code sounds super exciting!</text>
+                <postback>programmer</postback>
+            </button>
+            <button>
+                <text>Writing code is fine, but I'd like to explore other options a bit deeper.</text>
+                <postback>not programmer</postback>
+            </button>    
+        </template>
+    </category>
+    
+</aiml>

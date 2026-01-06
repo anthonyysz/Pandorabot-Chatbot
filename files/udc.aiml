@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>*</pattern>
+        <template>I'm sorry, but your response doesn't match any of our options. Please follow along using the buttons provided.
+            <button>
+                <text>Let's get started</text>
+                <postback>begin</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>begin</pattern>
+        <template>How can I help you today?
+            <button>
+                <text>Tell me about popular career options.</text>
+                <postback>careers</postback>
+            </button>
+            <button>
+                <text>Give me a test to find out what's for me.</text>
+                <postback>test</postback>
+            </button>    
+            <button>
+                <text>Help me book an appointment with an advisor</text>
+                <postback>help ^</postback>
+            </button>
+        </template>
+    </category>
+
+<category><pattern>hi</pattern><template><srai>BEGIN</srai></template></category>
+<category><pattern>hello</pattern><template><srai>BEGIN</srai></template></category>
+
+
+<category><pattern>start</pattern><template><srai>BEGIN</srai></template></category>
+
+    
+    <category>
+        <pattern>careers</pattern>
+        <template>Here are some popular career paths which your computer science degree can help lead you to:
+            <button>
+                <text>Software Developer</text>
+                <postback>software developer</postback>
+            </button>
+            <button>
+                <text>Web Developer</text>
+                <postback>web developer</postback>
+            </button>
+            <button>
+                <text>Data Scientist</text>
+                <postback>data scientist</postback>
+            </button>    
+            <button>
+                <text>Security Analyst</text>
+                <postback>security analyst</postback>
+            </button>    
+            <button>
+                <text>IT Support Professional</text>
+                <postback>it support</postback>
+            </button>    
+        </template>
+    </category>
+
+<category><pattern>jobs</pattern><template><srai>CAREERS</srai></template></category>
+<category><pattern>career</pattern><template><srai>CAREERS</srai></template></category>
+<category><pattern>job</pattern><template><srai>CAREERS</srai></template></category>
+<category><pattern>work</pattern><template><srai>CAREERS</srai></template></category>
+<category><pattern>positions</pattern><template><srai>CAREERS</srai></template></category>
+
+</aiml>

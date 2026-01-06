@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>help ^</pattern>
+        <template>For additional help beyond the provided information, please select an appropriate time to meet with an advisor.
+            <button>
+                <text>12:00pm</text>
+                <postback>scheduled</postback>
+            </button>
+            <button>
+                <text>3:00pm</text>
+                <postback>scheduled</postback>
+            </button>
+            <button>
+                <text>7:00pm</text>
+                <postback>scheduled</postback>
+            </button>
+            <button>
+                <text>I don't want to book an appointment, bring me back to the beginning.</text>
+                <postback>begin</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>none result</pattern>
+        <template>We're sorry that none of the provided options seemed to fit you. How else can we help you today?
+            <button>
+                <text>Schedule an appointment with an advisor</text>
+                <postback>help ^</postback>
+            </button>
+            <button>
+                <text>Bring me back to the beginning</text>
+                <postback>begin</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>scheduled</pattern>
+        <template>Thank you for scheduling an appointment with us. An advisor will reach out to you at your scheduled time tomorrow.
+            <button>
+                <text>Exit to start</text>
+                <postback>begin</postback>
+            </button>
+        </template>
+    </category>
+</aiml>
