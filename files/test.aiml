@@ -16,8 +16,8 @@
         </template>
     </category>
 
-<category><pattern>quiz</pattern><template><srai>TEST</srai></template></category>
-<category><pattern>exam</pattern><template><srai>TEST</srai></template></category>
+<category><pattern>quiz</pattern><template><srai>test</srai></template></category>
+<category><pattern>exam</pattern><template><srai>test</srai></template></category>
 
     
     <category>

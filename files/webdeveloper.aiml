@@ -21,4 +21,6 @@
             </button>
         </template>
     </category>
+    
+    <category><pattern>^ websites</pattern><template><srai>web developer</srai></template></category>
 </aiml>

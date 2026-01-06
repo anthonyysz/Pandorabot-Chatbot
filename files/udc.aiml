@@ -28,11 +28,9 @@
         </template>
     </category>
 
-<category><pattern>hi</pattern><template><srai>BEGIN</srai></template></category>
-<category><pattern>hello</pattern><template><srai>BEGIN</srai></template></category>
-
-
-<category><pattern>start</pattern><template><srai>BEGIN</srai></template></category>
+<category><pattern>^ hi ^</pattern><template><srai>begin</srai></template></category>
+<category><pattern>^ hello ^</pattern><template><srai>begin</srai></template></category>
+<category><pattern>^ start ^</pattern><template><srai>begin</srai></template></category>
 
     
     <category>
@@ -61,10 +59,10 @@
         </template>
     </category>
 
-<category><pattern>jobs</pattern><template><srai>CAREERS</srai></template></category>
-<category><pattern>career</pattern><template><srai>CAREERS</srai></template></category>
-<category><pattern>job</pattern><template><srai>CAREERS</srai></template></category>
-<category><pattern>work</pattern><template><srai>CAREERS</srai></template></category>
-<category><pattern>positions</pattern><template><srai>CAREERS</srai></template></category>
+<category><pattern>^ jobs ^</pattern><template><srai>careers</srai></template></category>
+<category><pattern>^ career ^</pattern><template><srai>careers</srai></template></category>
+<category><pattern>^ job ^</pattern><template><srai>careers</srai></template></category>
+<category><pattern>^ work ^</pattern><template><srai>careers</srai></template></category>
+<category><pattern>^ positions ^</pattern><template><srai>careers</srai></template></category>
 
 </aiml>

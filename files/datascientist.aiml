@@ -21,4 +21,7 @@
             </button>
         </template>
     </category>
+    
+    <category><pattern>^ stats</pattern><template><srai>data scientist</srai></template></category>
+    <category><pattern>^ statistics</pattern><template><srai>data scientist</srai></template></category>
 </aiml>

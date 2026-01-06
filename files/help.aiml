@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
     <category>
-        <pattern>help ^</pattern>
+        <pattern>^ help ^</pattern>
         <template>For additional help beyond the provided information, please select an appropriate time to meet with an advisor.
             <button>
                 <text>12:00pm</text>

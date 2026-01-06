@@ -21,5 +21,8 @@
             </button>
         </template>
     </category>
+    
+    <category><pattern>^ apps</pattern><template><srai>software developer</srai></template></category>
+    <category><pattern>^ applications</pattern><template><srai>software developer</srai></template></category>
 
 </aiml>
